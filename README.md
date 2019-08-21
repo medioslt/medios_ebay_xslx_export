@@ -13,3 +13,8 @@ The following data is exported:
 * Invoice slip products
 * Total quantity
 * Total price
+
+Dependencies
+- jQuery
+- jQuery.xpath
+- Sheetjs
