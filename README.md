@@ -3,7 +3,7 @@
 Exports invoice slip data into excel file.
 
 The following data is exported:
-
+* Order number
 * Name
 * Address line 1
 * Address line 2
