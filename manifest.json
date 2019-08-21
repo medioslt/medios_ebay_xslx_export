@@ -1,0 +1,26 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "Medios.lt eBay export to XLSX",
+  "version": "0.1.0",
+
+  "description": "An eBay invoice export to XLSX file",
+  "icons": { "16": "medios.png",
+           "48": "medios.png",
+          "128": "medios.png" },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+	"activeTab",
+	"downloads"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.4.1.min.js","jquery.xpath.min.js","xlsx.full.min.js","medios_getinvoicedata.js"]
+    }
+  ]
+
+}
