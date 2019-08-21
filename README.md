@@ -1,2 +1,15 @@
-# medios_ebay_xslx_export
-Chrome plugin for exporting  invoice slip data into an excel file
+# Medios eBay XLSX export
+
+Exports invoice slip data into excel file.
+
+The following data is exported:
+
+* Name
+* Address line 1
+* Address line 2
+* County
+* Post Code
+* Country
+* Invoice slip products
+* Total quantity
+* Total price
