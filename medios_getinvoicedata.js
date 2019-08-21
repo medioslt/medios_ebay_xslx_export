@@ -13,7 +13,7 @@ wb.Props = {
         };
 wb.SheetNames.push("Orders");	
 var orders = [];	
-for(var i = 1;i <= 10/*Number.MAX_SAFE_INTEGER*/;i++)
+for(var i = 1;i <= Number.MAX_SAFE_INTEGER;i++)
 {
 	var buyer = $(document).xpath('//*[@id="MyEbay"]/table['+i+']/tbody/tr/td/table[2]/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td').html();
 	
@@ -40,7 +40,7 @@ for(var i = 1;i <= 10/*Number.MAX_SAFE_INTEGER*/;i++)
 	orderData.productName = {};
 	orderData.productPack = {};
 	
-	for(var j = 8;j <= 8000/*Number.MAX_SAFE_INTEGER*/;j += 3)
+	for(var j = 8;j <= Number.MAX_SAFE_INTEGER;j += 3)
 	{
 	 var quantity = $(document).xpath('//*[@id="MyEbay"]/table['+i+']/tbody/tr/td/table[3]/tbody/tr['+j+']/td[2]').html();
 	 if(quantity == undefined)
